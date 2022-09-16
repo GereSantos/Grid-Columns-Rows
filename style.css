@@ -1,0 +1,44 @@
+.grid-container{
+    display:grid;
+  /* O item a terá 200px de largura*/
+  /* O item b terá 100px de largura*/
+  /* O item c terá 400px de largura*/
+    grid-template-columns: [a]200px [b]100px [c]400px;
+    grid-template-rows:[_1]100px [_2]50px;
+  }
+  
+  .item.a1{
+    grid-column:a;
+    grid-row:_1;
+  }
+  
+  .item.ac1{
+    grid-column:a/c;
+    grid-row:_1/_2;
+  }
+  .item1{
+    background:gray;
+  }
+  
+  .item2{
+    background:red;
+  }
+  
+  .item3{
+    background:blue;
+  }
+
+
+  .item4{
+    background:green;
+  }
+
+  .item5{
+    background:yellow;
+  }
+
+
+  .item6{
+    background:gray;
+  }
+  
